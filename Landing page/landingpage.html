@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timless Travles - Explore.Discover.Remember</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Timeless Travels</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-text">
+            <h2>Your Adventure Begins Here</h2>
+            <p>Welcome to our travel hub, where every journey begins. Explore our curated selection of unforgettable experiences, from breathtaking destinations to exquisite culinary delights. Let us guide you in creating memories that last a lifetime..</p>
+            <button onclick="showAlert()">Explore Now</button>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2><u>About Us</u></h2>
+        <div class="about-container">
+            <img src="timelesstravels.jpg" alt="About Timeless Travles!">
+            <p>TimelessTravels is a premium travel agency dedicated to crafting unforgettable journeys. From tropical beaches to historical wonders, we provide personalized & unforgettable travel experiences to suit every adventurer’s dream.Join us on a journey that celebrates the beauty of travel,culture and joy of exploration.</p>
+        </div>
+    </section>
+
+    <section id="destinations">
+        <h2><u>Our Top Destinations</u></h2>
+        <div class="slider-container">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="destinations-wrapper">
+                <div class="destination">
+                    <img src="paris.jpeg" alt="Paris, France">
+                    <h3>Paris, France</h3>
+                    <p>Experience the charm of the Eiffel Tower and romantic streets.</p>
+                </div>
+                <div class="destination">
+                    <img src="Bali.jpeg" alt="Bali, Indonesia">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Discover the tropical paradise with stunning beaches.</p>
+                </div>
+                <div class="destination">
+                    <img src="newyork.jpeg" alt="New York, USA">
+                    <h3>New York, USA</h3>
+                    <p>Explore Times Square, Central Park, and Broadway shows.</p>
+                </div>
+                <div class="destination">
+                    <img src="tokyo.jpeg" alt="Tokyo, Japan">
+                    <h3>Tokyo, Japan</h3>
+                    <p>Experience Japan’s rich culture and futuristic city life.</p>
+                </div>
+                <div class="destination">
+                    <img src="italy.jpeg" alt="Italy">
+                    <h3>Venice, Italy</h3>
+                <p>Explore the canals of Venice and Italian cultural heritage.</p>
+                </div>
+                
+                
+            </div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2><u>Our Services</u></h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="service1.jpeg" alt="Luxury Hotels">
+                <h3>Luxury Hotels</h3>
+                <p>Enjoy comfortable and luxurious accomodations tailored to your preferences,providing the perfect retreat after a day of exploration.</p>
+                
+            </div>
+
+            <div class="service">
+                <img src="service2.jpeg" alt="Flight Booking">
+                <h3>Seamless Flight Arrangements</h3>
+                <p>Experience hassle-free flight booking with our personalized service,ensuring you find best routes and prices for your travel needs.</p>
+            </div>
+
+            <div class="service">
+                <img src="service3.jpeg" alt="Food Accomodations">
+                <h3>Exquisite Food Experiences</h3>
+                <p>Include in Exquisite Food Experiences as part of your journey with Timeless Travels,where we curate unique dining options that showcase the rich flavors and traditions of each destination.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2><u>Gallery</u></h2>
+        <div class="gallery-container">
+            <img src="gallery1.jpeg" alt="Tropical Beach">
+            <img src="gallery2.jpeg" alt="Kyoto Japan ">
+            <img src="gallery3.jpeg" alt="Santaroni Greece">
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2><u>Contact Us</u></h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Enter your Message" required></textarea>
+            </div>
+    
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="bar" style="color: #3A3B3C;text-align: left;">
+            <br>Copyright © 2025 Timeless Travels. All rights reserved.
+          </div>
+    </section>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
